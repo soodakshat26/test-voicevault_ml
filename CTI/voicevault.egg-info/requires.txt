@@ -1,0 +1,11 @@
+numpy
+scipy
+librosa
+pywavelets
+scikit-learn
+matplotlib
+sounddevice
+soundfile
+fastdtw
+transformers
+torch

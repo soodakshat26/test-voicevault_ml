@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: voicevault
+Version: 1.0.0
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: librosa
+Requires-Dist: pywavelets
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: sounddevice
+Requires-Dist: soundfile
+Requires-Dist: fastdtw
+Requires-Dist: transformers
+Requires-Dist: torch

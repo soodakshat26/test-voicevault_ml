@@ -1,0 +1,50 @@
+preprocessing:
+  noise_suppression:
+    method: "spectral_subtraction"
+    bands: 64
+    psychoacoustic_masking: true
+    phase_preservation: true
+    
+  vad:
+    model: "rnn_attention"
+    frame_size: 20  # ms
+    overlap: 10  # ms
+    context_frames: 40
+    decision_threshold: 0.5
+    
+  normalization:
+    cepstral_mean_variance: true
+    channel_equalization: true
+    phase_normalization: true
+    modulation_spectrum: true
+
+features:
+  acoustic:
+    mfcc:
+      coefficients: 20
+      liftering: 22
+    x_vectors:
+      embedding_size: 512
+      pooling: "temporal_statistics"
+      
+  spectral:
+    reassigned_spectrogram: true
+    multi_taper: true
+    taper_count: 8
+    group_delay: true
+    
+  prosodic:
+    f0_algorithm: "yaapt"
+    f0_range: [50, 600]  # Hz
+    energy_bands: 5
+    speech_rate: true
+    
+  glottal:
+    inverse_filtering: "iaif"
+    model_order: 24
+    closed_phase_analysis: true
+    
+  temporal:
+    vot_detection: true
+    micro_prosody: true
+    formant_transitions: true

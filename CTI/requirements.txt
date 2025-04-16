@@ -1,0 +1,15 @@
+numpy>=1.20.0
+scipy>=1.7.0
+librosa>=0.8.1
+pywavelets>=1.1.1
+scikit-learn>=1.0.0
+matplotlib>=3.4.0
+sounddevice>=0.4.1
+soundfile>=0.10.3
+praat-parselmouth>=0.4.0
+fastdtw>=0.3.4
+nltk>=3.6.2
+spacy>=3.1.0
+transformers>=4.11.0
+torch>=1.9.0
+tqdm>=4.62.0

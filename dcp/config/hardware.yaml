@@ -1,0 +1,23 @@
+audio_acquisition:
+  sampling_rate: 96000
+  bit_depth: 32
+  channels: 8
+  microphone:
+    type: "MEMS"
+    sensitivity: -38  # dB
+    snr: 80  # dB
+    frequency_response: [20, 20000]  # Hz
+  pre_amplifier:
+    gain: 40  # dB
+    dynamic_range: 130  # dB
+    thd: 0.001  # Total harmonic distortion
+
+acoustic_chamber:
+  isolation: 60  # dB
+  background_noise: 15  # dB(A)
+  dimensions: [2.5, 2.5, 2.2]  # m
+
+sensor_network:
+  nodes: 8
+  spatial_configuration: "3D-array"
+  synchronization: "ptp"  # Precision Time Protocol

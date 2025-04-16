@@ -1,0 +1,6 @@
+setup.py
+voicevault.egg-info/PKG-INFO
+voicevault.egg-info/SOURCES.txt
+voicevault.egg-info/dependency_links.txt
+voicevault.egg-info/requires.txt
+voicevault.egg-info/top_level.txt
